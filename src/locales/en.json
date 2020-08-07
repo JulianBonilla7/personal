@@ -1,0 +1,25 @@
+{
+  "common": {
+    "appname": "Julián Bonilla",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "exit-dialog": {
+    "title": "Exit screen",
+    "text": "Do you really want to exit @:common.appname ?",
+    "button-1": "@:common.yes",
+    "button-2": "@:common.no"
+  },
+  "hello": "Hello i18n in SFC!",
+  "progress": "This website is a work in progress. Come back later to see more features!",
+  "welcome": "Welcome!",
+  "yes-button": "Yes",
+  "no-button": "No!"
+}
