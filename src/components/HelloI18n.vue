@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "HelloI18n",
+  name: "HelloI18n"
 };
 </script>
 
