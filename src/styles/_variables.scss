@@ -1,3 +1,4 @@
+@import "bulma/sass/utilities/_all.sass";
 // $vue: #42b883;
 // $vue-light: #42b883;
 // $primary: $vue;
@@ -27,8 +28,10 @@
 // $input-border-color: transparent;
 // $input-shadow: none;
 
-$family-primary: "Amaranth", sans-serif;
-$family-secondary: "Titillium Web", sans-serif;
+$button-text-color: $grey-light;
+
+// $family-primary: "Amaranth", sans-serif;
+// $family-secondary: "Titillium Web", sans-serif;
 
 $family-primary: "Exo 2", sans-serif;
 $family-secondary: "Metrophobic", sans-serif;
