@@ -26,7 +26,7 @@ import HelloI18n from "@/components/HelloI18n.vue";
 export default {
   name: "Home",
   components: {
-    HelloI18n,
-  },
+    HelloI18n
+  }
 };
 </script>

@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import LocaleSwitch from "@/components/LocaleSwitch.vue";
-import MainMenu from "@/components/MainMenu.vue";
+import LocaleSwitch from "@/components/common/LocaleSwitch.vue";
+import MainMenu from "@/components/layout/MainMenu.vue";
 import BurgerMenu from "@/components/ui/BurgerMenu.vue";
 
 export default {
@@ -25,8 +25,8 @@ export default {
   components: {
     LocaleSwitch,
     MainMenu,
-    BurgerMenu,
-  },
+    BurgerMenu
+  }
 };
 </script>
 

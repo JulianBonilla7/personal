@@ -40,6 +40,9 @@
     border-bottom: 2px solid #fff;
   }
 }
+a.navbar-item:focus {
+  background-color: #292929;
+}
 .navbar-start {
   .navbar-item {
     // width: 5em;

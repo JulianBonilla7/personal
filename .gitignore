@@ -6,6 +6,7 @@ node_modules
 src/assets/img
 
 # local env files
+.env
 .env.local
 .env.*.local
 

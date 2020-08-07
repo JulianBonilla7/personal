@@ -1,6 +1,6 @@
 <template>
-  <section class="about">
-    <h1>{{ $t("welcome") }}</h1>
+  <section class="container about">
+    <h1 class="title">{{ $t("welcome") }}</h1>
   </section>
 </template>
 
