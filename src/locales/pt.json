@@ -1,0 +1,21 @@
+{
+  "common": {
+    "appname": "Julián Bonilla",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "menu": {
+    "home": "Inicio",
+    "about": "Sobre mi"
+  },
+  "exit-dialog": {
+    "title": "Exit screen",
+    "text": "Do you really want to exit @:common.appname ?",
+    "button-1": "@:common.yes",
+    "button-2": "@:common.no"
+  },
+  "hello": "Hola i18n en SFC!",
+  "welcome": "Bem-vindo!",
+  "yes-button": "Sí",
+  "no-button": "No!"
+}
