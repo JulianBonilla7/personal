@@ -6,17 +6,21 @@
     <main class="hero-body">
       <router-view />
     </main>
-    <!-- <footer class="hero-foot"></footer> -->
+    <footer class="hero-foot">
+      <SocialMedia />
+    </footer>
   </div>
 </template>
 
 <script>
 import AppHeader from "@/components/layout/AppHeader.vue";
+import SocialMedia from "@/components/ui/SocialMedia.vue";
 
 export default {
   name: "App",
   components: {
-    AppHeader
+    AppHeader,
+    SocialMedia
   }
 };
 </script>
