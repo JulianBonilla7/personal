@@ -3,7 +3,8 @@ import Vue from "vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faSave,
-  faExclamationTriangle
+  faExclamationTriangle,
+  faGlobe
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -16,6 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(
   faSave,
   faExclamationTriangle,
+  faGlobe,
   faGithub,
   faLinkedinIn,
   faStackOverflow,
