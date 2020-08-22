@@ -4,6 +4,11 @@
     "yes": "Yes",
     "no": "No"
   },
+  "lang": {
+    "en": "English",
+    "es": "Español",
+    "pt": "Português"
+  },
   "menu": {
     "home": "Home",
     "about": "About",

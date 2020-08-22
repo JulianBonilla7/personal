@@ -36,8 +36,8 @@
 <style lang="scss" scoped>
 #nav {
   .router-link-exact-active {
-    color: #fff;
-    border-bottom: 2px solid #fff;
+    color: $primary;
+    border-bottom: 2px solid $primary;
   }
 }
 a.navbar-item:focus {
