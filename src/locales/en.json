@@ -22,6 +22,7 @@
     "button-1": "@:common.yes",
     "button-2": "@:common.no"
   },
+  "current-language": "Current language",
   "hello": "Hello i18n in SFC!",
   "progress": "This website is a work in progress. Come back later to see more features!",
   "welcome": "Welcome!",
