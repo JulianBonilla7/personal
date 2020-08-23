@@ -2,7 +2,14 @@
   <div class="field locale-switch">
     <div class="control has-icons-left">
       <div class="select is-small is-primary">
-        <select v-model="$i18n.locale">
+        <label for="language-select" class="is-sr-only">{{
+          $t("current-language")
+        }}</label>
+        <select
+          id="language-select"
+          v-model="$i18n.locale"
+          @change="updatePageLanguage"
+        >
           <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">{{
             $t(`lang.${lang}`)
           }}</option>
@@ -22,6 +29,11 @@ export default {
     return {
       langs: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(","),
     };
+  },
+  methods: {
+    updatePageLanguage({ target }) {
+      document.documentElement.setAttribute("lang", target.value);
+    },
   },
 };
 </script>
