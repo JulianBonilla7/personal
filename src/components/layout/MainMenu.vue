@@ -1,31 +1,31 @@
 <template>
   <div class="navbar-start">
     <router-link class="navbar-item" to="/">
-      <!-- <font-awesome-icon icon="save" /> -->
+      <font-awesome-icon pull="left" fixed-width icon="home" />
       <span>
         {{ $t("menu.home") }}
       </span>
     </router-link>
     <router-link class="navbar-item" to="/about">
-      <!-- <font-awesome-icon icon="save" /> -->
+      <font-awesome-icon pull="left" fixed-width icon="user-circle" />
       <span>
         {{ $t("menu.about") }}
       </span>
     </router-link>
     <router-link class="navbar-item" to="/contact">
-      <!-- <font-awesome-icon icon="save" /> -->
+      <font-awesome-icon pull="left" fixed-width icon="envelope" />
       <span>
         {{ $t("menu.contact") }}
       </span>
     </router-link>
     <router-link class="navbar-item" to="/portfolio">
-      <!-- <font-awesome-icon icon="save" /> -->
+      <font-awesome-icon pull="left" fixed-width icon="briefcase" />
       <span>
         {{ $t("menu.portfolio") }}
       </span>
     </router-link>
     <router-link class="navbar-item" to="/blog">
-      <!-- <font-awesome-icon icon="save" /> -->
+      <font-awesome-icon pull="left" fixed-width icon="feather-alt" />
       <span>
         {{ $t("menu.blog") }}
       </span>
