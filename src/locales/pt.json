@@ -6,7 +6,14 @@
   },
   "menu": {
     "home": "Inicio",
-    "about": "Sobre mi"
+    "about": "Sobre mi",
+    "portfolio": "Portafolio",
+    "contact": "Contacto",
+    "blog": "Blog"
+  },
+  "home": {
+    "welcome": "Bem-vindos a minha pagina!",
+    "description": "Desenvolvedor de software residente na Colômbia. Apoiador de trabalho remoto com 4+ anos de experiência trabalhando com equipes ágeis em todo o mundo. Especialista em JavaScript e front-end. Fanático por viagens e amante da comida."
   },
   "exit-dialog": {
     "title": "Exit screen",
@@ -14,8 +21,10 @@
     "button-1": "@:common.yes",
     "button-2": "@:common.no"
   },
-  "hello": "Hola i18n en SFC!",
-  "welcome": "Bem-vindo!",
-  "yes-button": "Sí",
+  "current-language": "Current language",
+  "hello": "Hello i18n in SFC!",
+  "progress": "This website is a work in progress. Come back later to see more features!",
+  "welcome": "Welcome!",
+  "yes-button": "Yes",
   "no-button": "No!"
 }
