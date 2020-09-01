@@ -16,6 +16,10 @@
     "contact": "Contact",
     "blog": "Blog"
   },
+  "home": {
+    "welcome": "Welcome to my page!",
+    "description": "Software developer based in Colombia. Remote work lover with 4+ years of experience working with agile teams all over the world. JavaScript and front-end specialist. Travel enthusiast and food lover."
+  },
   "exit-dialog": {
     "title": "Exit screen",
     "text": "Do you really want to exit @:common.appname ?",
