@@ -5,6 +5,7 @@
         v-for="item in socials"
         :key="item.name"
         :href="item.url"
+        :aria-label="item.name"
         target="_blank"
         rel="noopener noreferrer"
         class="button is-text is-outlined is-rounded is-medium"
@@ -25,21 +26,21 @@ export default {
         {
           name: "github",
           url: "https://github.com/JulianBonilla7",
-          icon: "github"
+          icon: "github",
         },
         {
           name: "linkedin",
           url: "https://www.linkedin.com/in/juli%C3%A1n-bonilla/",
-          icon: "linkedin-in"
+          icon: "linkedin-in",
         },
         {
           name: "twitter",
-          url: "https://twitter.com/JulianBoni11a",
-          icon: "twitter"
-        }
-      ]
+          url: "https://twitter.com/jboni11a",
+          icon: "twitter",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
