@@ -8,13 +8,14 @@ import {
   faEnvelope,
   faBriefcase,
   faUserCircle,
-  faFeatherAlt,
+  faFeatherAlt
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedinIn,
   faStackOverflow,
   faTwitter,
+  faJira
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -29,7 +30,8 @@ library.add(
   faGithub,
   faLinkedinIn,
   faStackOverflow,
-  faTwitter
+  faTwitter,
+  faJira
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
