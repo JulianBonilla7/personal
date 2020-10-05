@@ -26,21 +26,21 @@ export default {
         {
           name: "github",
           url: "https://github.com/JulianBonilla7",
-          icon: "github",
+          icon: "github"
         },
         {
           name: "linkedin",
           url: "https://www.linkedin.com/in/juli%C3%A1n-bonilla/",
-          icon: "linkedin-in",
+          icon: "linkedin-in"
         },
         {
           name: "twitter",
           url: "https://twitter.com/jboni11a",
-          icon: "twitter",
-        },
-      ],
+          icon: "twitter"
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
