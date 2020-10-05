@@ -19,8 +19,8 @@ export default {
   props: {
     target: {
       type: String,
-      default: "",
-    },
+      default: ""
+    }
   },
   methods: {
     triggerMenu: ({ target }) => {
@@ -29,7 +29,7 @@ export default {
         const $target = document.querySelector(`#${target.dataset.target}`);
         if ($target) $target.classList.toggle("is-active");
       }
-    },
-  },
+    }
+  }
 };
 </script>

@@ -27,14 +27,14 @@ export default {
   name: "LocaleSwitch",
   data() {
     return {
-      langs: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(","),
+      langs: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(",")
     };
   },
   methods: {
     updatePageLanguage({ target }) {
       document.documentElement.setAttribute("lang", target.value);
-    },
-  },
+    }
+  }
 };
 </script>
 

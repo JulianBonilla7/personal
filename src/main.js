@@ -5,6 +5,10 @@ import store from "./store";
 import i18n from "./i18n";
 
 import "@/shared/config/fa.js";
+import VueTippy, { TippyComponent } from "vue-tippy";
+
+Vue.use(VueTippy);
+Vue.component("tippy", TippyComponent);
 
 Vue.config.productionTip = false;
 
