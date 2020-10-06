@@ -4,18 +4,25 @@
       <div class="column">
         <div class="px-3">
           <h1 class="title is-size-2">{{ $t("about.title") }}</h1>
-          <p
-            class="is-family-secondary is-size-5"
-            v-html="$t('about.description')"
-          ></p>
+          <i18n
+            path="about.description"
+            tag="p"
+            class="pre-formatted is-family-secondary is-size-5"
+          >
+            <template v-slot:cv>
+              <a :href="url" class="has-text-link" target="_blank">{{
+                $t("about.cv")
+              }}</a>
+            </template>
+          </i18n>
         </div>
-        <a class="has-text-link" href="/assets/CV.pdf" target="_blank">
-          <span>CV</span>
-        </a>
-        <h2 class="is-size-2">{{ $t("about.skills") }}</h2>
+        <h2 class="is-size-3 title">{{ $t("about.skills") }}</h2>
+        <h3 class="is-size-5 subtitle is-family-secondary">
+          {{ $t("about.instructions") }}
+        </h3>
         <dl class="skills">
           <template v-for="category in skills">
-            <dt class="is-size-4 is-family-secondary" :key="category.level">
+            <dt class="is-size-5 is-family-secondary" :key="category.level">
               {{ $t(`about.${category.level}`) }}
             </dt>
             <dd v-for="skill in category.items" :key="skill.key" class="skill">
@@ -30,7 +37,7 @@
         </dl>
       </div>
       <div class="column">
-        <h2 class="is-size-2">Experience</h2>
+        <h2 class="is-size-3 title">Experience</h2>
         <div class="tile is-ancestor">
           <div class="tile is-parent is-vertical">
             <article
@@ -93,6 +100,15 @@ export default {
       experience: experience,
       skills: skills
     };
+  },
+  computed: {
+    url() {
+      const resumeEn =
+        "https://drive.google.com/file/d/19D7D-ZwgO9eULpD8FXgfsn-H_ZZQNOz6/view?usp=sharing";
+      const resumeEs =
+        "https://drive.google.com/file/d/1uKt5NdB0QVrpBMOShA1AVT01LkUwNrGo/view?usp=sharing";
+      return this.$i18n.locale === "es" ? resumeEs : resumeEn;
+    }
   }
 };
 </script>
@@ -100,5 +116,8 @@ export default {
 <style lang="scss" scoped>
 dd {
   display: inline-block;
+}
+.pre-formatted {
+  white-space: pre-wrap;
 }
 </style>
