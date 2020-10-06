@@ -9,18 +9,21 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    component: Home,
+    meta: { order: 1 }
   },
   {
     path: "/about",
     name: "About",
-    component: () => import(/* webpackChunkName: "about" */ "../views/about")
+    component: () => import(/* webpackChunkName: "about" */ "../views/about"),
+    meta: { order: 2 }
   },
   {
     path: "/contact",
     name: "contact",
     component: () =>
-      import(/* webpackChunkName: "contact" */ "../views/contact")
+      import(/* webpackChunkName: "contact" */ "../views/contact"),
+    meta: { order: 3 }
   },
   {
     path: "*",

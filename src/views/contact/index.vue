@@ -4,8 +4,12 @@
       <div class="column">
         <div class="columns">
           <div class="column is-two-thirds is-offset-1">
-            <div class="has-text-left ">
-              <h1 class="title is-1 is-spaced">{{ $t("contact.title") }}</h1>
+            <div class="has-text-left has-text-grey-light is-unselectable">
+              <h1 class="title is-1 is-spaced ">
+                <span class="has-underline">
+                  {{ $t("contact.title") }}
+                </span>
+              </h1>
               <p class="is-size-5 block is-family-secondary">
                 {{ $t("contact.subtitle") }}
               </p>
@@ -15,8 +19,8 @@
                 tag="p"
               >
                 <template v-slot:email>
-                  <a :href="email" class="has-text-link">
-                    {{ $t("contact.email-link") }}
+                  <a :href="email" class="has-text-primary-light fancy">
+                    <span class="content">{{ $t("contact.email-link") }}</span>
                   </a>
                 </template>
               </i18n>

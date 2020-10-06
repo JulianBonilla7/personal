@@ -9157,6 +9157,11 @@ vue-tippy@^4.7.1:
     humps "^2.0.1"
     tippy.js "^4.3.5"
 
+vue2-touch-events@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/vue2-touch-events/-/vue2-touch-events-3.0.0.tgz#20ce18cbe7438f5a8d8ad0e955207327c37279da"
+  integrity sha512-0n5Nc88PL3L4/qOKpQkF0ggjNFjdnVkf+50Nc8SrOpKgYMRrjrEngDadWF8lzLZNKPgDupXfPbSdtzYfbyXO1Q==
+
 vue@^2.6.10:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
