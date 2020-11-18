@@ -38,62 +38,23 @@
       </div>
       <div class="column">
         <h2 class="is-size-3 title">Experience</h2>
-        <div class="tile is-ancestor">
-          <div class="tile is-parent is-vertical">
-            <article
-              class="tile is-child notification is-dark"
-              v-for="item in experience"
-              :key="item.companyName"
-            >
-              <div class="level">
-                <div class="level-left">
-                  <div class="level-item">
-                    <h3>{{ item.role }}</h3>
-                  </div>
-                  <div class="level-item">
-                    <a
-                      class="has-text-info-dark"
-                      target="_blank"
-                      :href="item.companyURL"
-                      >{{ item.companyName }}</a
-                    >
-                  </div>
-                </div>
-                <div class="level-right">
-                  <div class="level-item">
-                    <span>{{ item.startDate }} - {{ item.endDate }}</span>
-                  </div>
-                </div>
-              </div>
-              <p class="is-family-secondary">{{ item.description }}</p>
-            </article>
-          </div>
-        </div>
+        <Timeline :items="experience" />
       </div>
     </div>
   </section>
 </template>
 
-<i18n>
-{
-  "en": {
-    "welcome": "Welcome to my about page!"
-  },
-  "es": {
-    "welcome": "¡Bienvenido a mi página!"
-  }
-}
-</i18n>
-
 <script>
 import IconTooltip from "@/components/common/IconTooltip.vue";
+import Timeline from "@/components/common/TimelineCard.vue";
 
 import experience from "@/shared/constants/experience";
 import skills from "@/shared/constants/skills";
 
 export default {
   components: {
-    IconTooltip
+    IconTooltip,
+    Timeline
   },
   data() {
     return {
