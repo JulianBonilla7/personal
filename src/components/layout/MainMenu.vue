@@ -18,7 +18,7 @@
         {{ $t("menu.contact") }}
       </span>
     </router-link>
-    <router-link class="navbar-item" to="/portfolio">
+    <!-- <router-link class="navbar-item" to="/portfolio">
       <font-awesome-icon pull="left" fixed-width icon="briefcase" />
       <span>
         {{ $t("menu.portfolio") }}
@@ -29,7 +29,7 @@
       <span>
         {{ $t("menu.blog") }}
       </span>
-    </router-link>
+    </router-link> -->
   </div>
 </template>
 
