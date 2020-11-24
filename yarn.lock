@@ -917,6 +917,14 @@
     js-yaml "^3.13.1"
     json5 "^2.1.1"
 
+"@maxflex/v-number@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@maxflex/v-number/-/v-number-1.0.9.tgz#26e2bf68a0fe543cc6e8c004d65388e88a34ad9d"
+  integrity sha512-F6e0r8UbQFVF7t3RTqocKwyVyziEaQ44ghMKwe2XGwKQJ2PSbVUYr7/uIUq4vWAiXjf9h/+IhZrc7JjvvLaimA==
+  dependencies:
+    core-js "^2.6.5"
+    vue "^2.6.10"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -9143,6 +9151,11 @@ vue-tippy@^4.7.1:
   dependencies:
     humps "^2.0.1"
     tippy.js "^4.3.5"
+
+vue@^2.6.10:
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
+  integrity sha512-uhmLFETqPPNyuLLbsKz6ioJ4q7AZHzD8ZVFNATNyICSZouqP2Sz0rotWQC8UNBF6VGSCs5abnKJoStA6JbCbfg==
 
 vue@^2.6.11:
   version "2.6.11"

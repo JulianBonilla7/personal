@@ -66,6 +66,15 @@
     "basic": "Basic knowledge",
     "interests": "Interests"
   },
+  "contact": {
+    "title": "Let's talk",
+    "description": "",
+    "thanks": "Thank you! We'll be in touch.",
+    "reset": "Send a new message",
+    "subject": "What can I help you with?",
+    "name": "Your name",
+    "email": "Your email"
+  },
   "exit-dialog": {
     "title": "Exit screen",
     "text": "Do you really want to exit @:common.appname ?",

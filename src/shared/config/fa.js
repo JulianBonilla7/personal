@@ -8,7 +8,9 @@ import {
   faEnvelope,
   faBriefcase,
   faUserCircle,
-  faFeatherAlt
+  faFeatherAlt,
+  faChevronRight,
+  faAngleRight
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -26,6 +28,8 @@ library.add(
   faEnvelope,
   faBriefcase,
   faFeatherAlt,
+  faChevronRight,
+  faAngleRight,
   faUserCircle,
   faGithub,
   faLinkedinIn,
