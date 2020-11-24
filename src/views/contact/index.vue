@@ -1,6 +1,6 @@
 <template>
   <section class="container contact">
-    <div class="columns is-vcentered">
+    <div class="columns is-vcentered is-desktop">
       <div class="column">
         <div class="columns">
           <div class="column is-two-thirds is-offset-1">
@@ -62,8 +62,8 @@ export default {
       data = data || this.getFormData();
       axios
         .post(this.formURL, data)
-        .then((response) => this.resetForm(response))
-        .catch((error) => this.onError(error));
+        .then(response => this.resetForm(response))
+        .catch(error => this.onError(error));
     },
     getFormData() {
       return {

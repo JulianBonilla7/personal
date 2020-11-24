@@ -185,7 +185,7 @@ export default {
     }
   },
   mounted() {
-    document.addEventListener("keydown", (e) => {
+    document.addEventListener("keydown", e => {
       if (e.key === "Enter") {
         e.preventDefault();
         this.nextQuestion();
