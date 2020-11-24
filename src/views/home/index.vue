@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="columns is-vcentered">
+    <div class="columns is-vcentered is-desktop">
       <div class="column notification">
         <img alt="Vue logo" src="@/assets/img/home.jpg" />
       </div>

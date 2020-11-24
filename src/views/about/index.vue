@@ -1,6 +1,6 @@
 <template>
   <section class="container about">
-    <div class="columns is-vcentered">
+    <div class="columns is-vcentered is-desktop">
       <div class="column">
         <div class="px-3">
           <h1 class="title is-size-2">{{ $t("about.title") }}</h1>
