@@ -4,15 +4,24 @@
       <div class="column">
         <div class="columns">
           <div class="column is-two-thirds is-offset-1">
-            <div class="has-text-left p-6">
+            <div class="has-text-left ">
               <h1 class="title is-1 is-spaced">{{ $t("contact.title") }}</h1>
-              <p class="subtitle is-size-5">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Dignissimos non accusamus, id saepe reprehenderit labore
-                voluptate eveniet natus ipsa nobis voluptatem totam velit
-                excepturi dolore, numquam possimus eligendi sunt eaque.
+              <p class="is-size-5 block is-family-secondary">
+                {{ $t("contact.subtitle") }}
               </p>
+              <i18n
+                class="is-size-5 is-family-secondary"
+                path="contact.description"
+                tag="p"
+              >
+                <template v-slot:email>
+                  <a :href="email" class="has-text-link">
+                    {{ $t("contact.email-link") }}
+                  </a>
+                </template>
+              </i18n>
             </div>
+            <!-- social proof here -->
           </div>
           <div class="column"></div>
         </div>
@@ -94,6 +103,7 @@ export default {
       formURL: "https://formspree.io/f/mrgoldep",
       loading: false,
       valid: true,
+      email: "mailto:jfbonillago@gmail.com",
       questions2: [
         {
           label: "What can I help you with?",

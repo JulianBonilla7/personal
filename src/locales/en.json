@@ -68,7 +68,9 @@
   },
   "contact": {
     "title": "Let's talk",
-    "description": "",
+    "subtitle": "Fill out this form for collaborations, job opportunities or just to say hi. I promise I don't bite - not so sure about my dog!",
+    "description": "Also, you can send an {email} or connect with me using the links at the bottom of the page.",
+    "email-link": "email",
     "thanks": "Thank you! We'll be in touch.",
     "reset": "Send a new message",
     "subject": "What can I help you with?",
