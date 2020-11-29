@@ -10,11 +10,13 @@ $vtl-indicator: red !default;
 $track-size: 8px;
 $circle-size: 20px;
 $circle-border: 5px;
+$vtl-card-size: 200px;
+$vtl-margin: $vtl-card-size * 1.5;
 
 .vtl {
-  margin-top: 480px;
+  margin-top: calc(#{$vtl-margin} + 2em);
   padding: 0;
-  border-top: 8px solid $vtl-white;
+  border-top: $track-size solid $vtl-white;
   list-style: none;
   position: relative;
   display: flex;
@@ -110,12 +112,12 @@ $circle-border: 5px;
 
   .vtl__content {
     width: 100%;
-    height: 240px;
+    height: $vtl-card-size;
     margin: 0 auto;
     border: 2px solid $vtl-white;
     border-radius: 8px;
     position: absolute;
-    top: -400px;
+    top: calc((#{$vtl-margin} + 1em) * -1);
     left: 0;
     right: 0;
     z-index: 100;
