@@ -1,13 +1,16 @@
 <template>
   <section class="container about">
-    <div class="columns is-vcentered is-desktop">
-      <div class="column">
-        <div class="px-3">
-          <h1 class="title is-size-2">{{ $t("about.title") }}</h1>
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <h1 class="title is-size-1">{{ $t("about.title") }}</h1>
+        <button class="button is-text is-small" @click="expanded = !expanded">
+          Show more
+        </button>
+        <div v-if="expanded" class="px-3 has-text-left">
           <i18n
             path="about.description"
             tag="p"
-            class="pre-formatted is-family-secondary is-size-5"
+            class="pre-formatted is-family-secondary is-size-6"
           >
             <template v-slot:cv>
               <a :href="url" class="has-text-link" target="_blank">{{
@@ -16,13 +19,17 @@
             </template>
           </i18n>
         </div>
+      </div>
+    </div>
+    <div class="columns is-desktop">
+      <div class="column">
         <h2 class="is-size-3 title">{{ $t("about.skills") }}</h2>
-        <h3 class="is-size-5 subtitle is-family-secondary">
+        <h3 class="is-size-6 subtitle is-family-secondary">
           {{ $t("about.instructions") }}
         </h3>
         <dl class="skills">
           <template v-for="category in skills">
-            <dt class="is-size-5 is-family-secondary" :key="category.level">
+            <dt class="is-size-6" :key="category.level">
               {{ $t(`about.${category.level}`) }}
             </dt>
             <dd v-for="skill in category.items" :key="skill.key" class="skill">
@@ -59,7 +66,8 @@ export default {
   data() {
     return {
       experience: experience,
-      skills: skills
+      skills: skills,
+      expanded: false
     };
   },
   computed: {
