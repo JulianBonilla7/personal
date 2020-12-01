@@ -19,7 +19,7 @@
             }}</label>
           </span>
           <input
-            type="text"
+            :type="question.type || 'text'"
             :name="question.name"
             :id="question.name"
             @focus.once="onFocus"
@@ -68,6 +68,8 @@
 
 <script>
 import { VNumber } from "@maxflex/v-number";
+import * as EmailValidator from "email-validator";
+
 export default {
   name: "StepForm",
   components: {
@@ -148,10 +150,17 @@ export default {
     },
     validate() {
       const value = this.getCurrentInput().value;
-      this.invalid = value === "";
-      if (this.invalid) {
+      if (value === "") {
         this._setErrorMessage("EMPTYSTR");
+        this.invalid = true;
+      } else if (
+        this.getCurrentInput().type === "email" &&
+        !EmailValidator.validate(value)
+      ) {
+        this._setErrorMessage("INVALIDEMAIL");
+        this.invalid = true;
       } else {
+        this.invalid = false;
         this.error = "";
       }
       this.$emit("form:validate", !this.invalid);
