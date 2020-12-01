@@ -119,7 +119,8 @@ export default {
         },
         {
           label: "Your email",
-          name: "email"
+          name: "email",
+          type: "email"
         }
       ]
     };

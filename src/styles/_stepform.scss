@@ -287,5 +287,8 @@ input[type="text"]::-ms-clear {
 @media screen and (max-width: 33.5625em) {
   .simform {
     font-size: 1.2em;
+    .sf-number {
+      font-size: 0.65em;
+    }
   }
 }
