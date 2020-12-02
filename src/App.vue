@@ -1,10 +1,16 @@
 <template>
-  <div id="app" class="hero is-fullheight is-dark is-bold">
+  <div
+    id="app"
+    class="hero is-fullheight is-dark is-bold"
+    v-touch:swipe="onSwipe"
+  >
     <header class="hero-head">
       <AppHeader />
     </header>
     <main class="hero-body">
-      <router-view />
+      <transition :name="transitionName" mode="out-in">
+        <router-view />
+      </transition>
     </main>
     <footer class="hero-foot">
       <SocialMedia />
@@ -21,6 +27,23 @@ export default {
   components: {
     AppHeader,
     SocialMedia
+  },
+  data() {
+    return {
+      transitionName: "slide"
+    };
+  },
+  methods: {
+    onSwipe(direction) {
+      console.log("swipe", direction);
+    }
+  },
+  watch: {
+    $route(to, from) {
+      const { order: origin } = from.meta;
+      const { order: destination } = to.meta;
+      this.transitionName = destination < origin ? "slide-left" : "slide-right";
+    }
   }
 };
 </script>

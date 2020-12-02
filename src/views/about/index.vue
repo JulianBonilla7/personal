@@ -2,49 +2,77 @@
   <section class="container about">
     <div class="columns is-centered">
       <div class="column is-half">
-        <h1 class="title is-size-1">{{ $t("about.title") }}</h1>
+        <h1 class="title is-size-1">
+          <span class="has-underline">
+            {{ $t("about.title") }}
+          </span>
+        </h1>
         <button class="button is-text is-small" @click="expanded = !expanded">
           Show more
         </button>
-        <div v-if="expanded" class="px-3 has-text-left">
-          <i18n
-            path="about.description"
-            tag="p"
-            class="pre-formatted is-family-secondary is-size-6"
-          >
-            <template v-slot:cv>
-              <a :href="url" class="has-text-link" target="_blank">{{
-                $t("about.cv")
-              }}</a>
-            </template>
-          </i18n>
-        </div>
+        <transition name="slide-up">
+          <div v-if="expanded" class="px-3 has-text-left">
+            <i18n
+              path="about.description"
+              tag="p"
+              class="pre-formatted is-family-secondary is-size-6 has-text-grey-light"
+            >
+              <template v-slot:cv>
+                <a
+                  :href="url"
+                  class="has-text-primary-light fancy"
+                  target="_blank"
+                >
+                  <span class="content">
+                    {{ $t("about.cv") }}
+                  </span>
+                </a>
+              </template>
+            </i18n>
+          </div>
+        </transition>
       </div>
     </div>
     <div class="columns is-desktop">
       <div class="column">
-        <h2 class="is-size-3 title">{{ $t("about.skills") }}</h2>
-        <h3 class="is-size-6 subtitle is-family-secondary">
+        <h2 class="is-size-3 title">
+          <span class="has-underline">
+            {{ $t("about.skills") }}
+          </span>
+        </h2>
+        <h3 class="is-size-6 subtitle is-family-secondary has-text-grey-light">
           {{ $t("about.instructions") }}
         </h3>
         <dl class="skills">
           <template v-for="category in skills">
-            <dt class="is-size-6" :key="category.level">
-              {{ $t(`about.${category.level}`) }}
-            </dt>
-            <dd v-for="skill in category.items" :key="skill.key" class="skill">
-              <IconTooltip
-                :text="skill.key"
-                :size="skill.size"
-                :type="skill.type"
-                :icon="skill.icon"
-              />
-            </dd>
+            <div class="block" :key="category.level">
+              <dt class="is-size-6">
+                <span>
+                  {{ $t(`about.${category.level}`) }}
+                </span>
+              </dt>
+              <dd
+                v-for="skill in category.items"
+                :key="skill.key"
+                class="skill has-text-grey-light"
+              >
+                <IconTooltip
+                  :text="skill.key"
+                  :size="skill.size"
+                  :type="skill.type"
+                  :icon="skill.icon"
+                />
+              </dd>
+            </div>
           </template>
         </dl>
       </div>
       <div class="column">
-        <h2 class="is-size-3 title">Experience</h2>
+        <h2 class="is-size-3 title">
+          <span class="has-underline">
+            Experience
+          </span>
+        </h2>
         <Timeline :items="experience" />
       </div>
     </div>
