@@ -10,6 +10,8 @@ import {
   faUserCircle,
   faFeatherAlt,
   faChevronRight,
+  faChevronDown,
+  faChevronUp,
   faAngleRight
 } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -29,6 +31,8 @@ library.add(
   faBriefcase,
   faFeatherAlt,
   faChevronRight,
+  faChevronDown,
+  faChevronUp,
   faAngleRight,
   faUserCircle,
   faGithub,
