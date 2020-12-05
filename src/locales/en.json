@@ -2,7 +2,10 @@
   "common": {
     "appname": "Julián Bonilla",
     "yes": "Yes",
-    "no": "No"
+    "no": "No",
+    "more": "Show more",
+    "less": "Show less",
+    "reset": "Send new message"
   },
   "lang": {
     "en": "English",
@@ -53,7 +56,8 @@
   },
   "home": {
     "welcome": "Welcome to my page!",
-    "description": "Software developer based in Colombia. Remote work lover with 4+ years of experience working with agile teams all over the world. JavaScript and front-end specialist. Travel enthusiast and food lover."
+    "description": "Software developer based in Colombia. Remote work lover with 4+ years of experience working with agile teams all over the world. JavaScript and front-end specialist. Travel enthusiast and food lover.",
+    "cta": "Get in touch!"
   },
   "about": {
     "title": "More about me",
@@ -61,10 +65,19 @@
     "cv": "check out my CV",
     "instructions": "Hover the icons to see more",
     "skills": "Skills & stack",
+    "experience": "Experience",
     "daily": "Daily use",
     "frequent": "Frequent",
     "basic": "Basic knowledge",
     "interests": "Interests"
+  },
+  "jobs": {
+    "everfi": "Implementation of a common framework for reusable and accessible UI components; customization of their look and feel using SASS based themes. Development of online educative courses with custom requirements related to design and functionality.",
+    "cartago": "Development of an AngularJS web application to provide an intuitive interface for massive document management within enterprise solutions.",
+    "victory": "Conversion of 300+ Flash-based educative games to HTML5 technologies and vanilla JavaScript.",
+    "swapps": "Make sure that the user experience is reflected in the design and translate it into HTML code , as well as implementing visual and interactive elements that users engage with through the application. Worked in multiple projects built in a vast stack: Django, Wordpress, Ionic, AngularJS, Vue.",
+    "front": "Front-end developer",
+    "js": "JavaScript developer"
   },
   "contact": {
     "title": "Let's talk",
@@ -74,8 +87,12 @@
     "thanks": "Thank you! We'll be in touch.",
     "reset": "Send a new message",
     "subject": "What can I help you with?",
+    "details": "Add more details...",
     "name": "Your name",
-    "email": "Your email"
+    "email": "Your email",
+    "loading": "Delivering your email...",
+    "empty": "Please fill the field before continuing",
+    "invalid-email": "Please fill a valid email address"
   },
   "exit-dialog": {
     "title": "Exit screen",

@@ -1,29 +1,58 @@
 {
   "common": {
     "appname": "Julián Bonilla",
-    "yes": "Yes",
-    "no": "No"
+    "yes": "Sí",
+    "no": "No",
+    "more": "Mostrar más",
+    "less": "Mostrar menos",
+    "reset": "Enviar nuevo mensaje"
   },
   "menu": {
     "home": "Inicio",
-    "about": "Sobre mi",
+    "about": "Sobre mí",
     "portfolio": "Portafolio",
     "contact": "Contacto",
     "blog": "Blog"
   },
   "home": {
     "welcome": "¡Bienvenidos a mi página!",
-    "description": "Desarrollador de software ubicado en Colombia. Partidario del trabajo remoto con 4+ años de experiencia con equipos ágiles en todo el mundo. Especialista en front-end y JavaScript. Fanático de los viajes y amante de la comida."
+    "description": "Desarrollador de software ubicado en Colombia. Partidario del trabajo remoto con 4+ años de experiencia con equipos ágiles en todo el mundo. Especialista en front-end y JavaScript. Fanático de los viajes y amante de la comida.",
+    "cta": "¡Contáctame!"
   },
   "about": {
-    "title": "More about me",
-    "description": "Born and raised in Colombia, I've been working remotely as a software engineer since 2016 for local and international companies with agile teams following good practices guidelines.\n\nMy focus is in front-end development and JavaScript stack while doing some bits on back-end as well. Besides web development, I'd like to work on videogame development, artificial intelligence and mentoring aspiring developers.\n\nI'm currently available for freelance work. If you have a project or just want to know more about me, {cv} or get in touch.",
-    "cv": "check out my CV",
-    "skills": "Skills & stack",
-    "daily": "Daily use",
-    "frequent": "Frequent",
-    "basic": "Basic knowledge",
-    "interests": "Interests"
+    "title": "Sobre mí",
+    "description": "Desde Colombia, he trabajado remotamente como ingeniero de software desde 2016 para compañías nacionales e internacionales con equipos ágiles siguiendo buenas prácticas de desarrollo.\n\nMi área de enfoque es el front-end con tecnologías JavaScript con algunas bases en back-end. Además del desarrollo web, me interesa trabajar en desarrollo de videojuegos, inteligencia artificial y guiar a nuevos desarrolladores.\n\nEstoy disponible para trabajo freelance. Si tienes un proyecto o quieres saber más sobre mí, {cv} o ponte en contacto conmigo.",
+    "cv": "revisa mi resumé",
+    "instructions": "Pasa sobre los íconos para ver más",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "daily": "Uso diario",
+    "frequent": "Frecuente",
+    "basic": "Básico",
+    "interests": "Intereses"
+  },
+  "contact": {
+    "title": "Hablemos.",
+    "subtitle": "Llena este formulario para colaboraciones, oportunidades de trabajo o simplemente para saludar. Prometo que no muerdo, aunque no puedo decir lo mismo de mi perro...",
+    "description": "También puedes enviarme un {email} o conectar conmigo en redes usando los botones al fondo de la página.",
+    "email-link": "correo",
+    "thanks": "¡Gracias! Responderé en breve.",
+    "reset": "Enviar un nuevo mensaje",
+    "subject": "¿En qué te puedo ayudar?",
+    "details": "Agrega más detalles",
+    "name": "Tu nombre",
+    "email": "Tu email",
+    "loading": "Enviando tu mensaje...",
+    "empty": "Por favor diligencie el campo para continuar",
+    "invalid-email": "Por favor ingrese una dirección de correo electrónico válida"
+  },
+  "jobs": {
+    "everfi": "Implementación de un framework común de componentes UI reusables y accesibles y personalización de sus estilos usando temas construidos en SASS. Desarrollo de cursos educativos online con requerimientos específicos de diseño y funcionalidades.",
+    "cartago": "Desarrollo de una aplicación web en AngularJS para brindar una interfaz intuitiva de gestión masiva de documentos integrada en soluciones empresariales.",
+    "victory": "Conversión de 300+ juegos educativos basados en Flash a tecnologías de HTML5 y JavaScript.",
+    "swapps": "Asegurar que la experiencia de usuario se refleje en los diseño e implementarlos en código HTML, así como desarrollar elementos visuales y funcionales con los que el usuario interactúa a través de la aplicación. Experiencia en proyectos desarrollados con una amplia gama de tecnologías: Django, Wordpress, Ionic, AngularJS, Vue.",
+    "front": "Desarrollador front-end",
+    "js": "Desarrollador JavaScript"
   },
   "exit-dialog": {
     "title": "Exit screen",

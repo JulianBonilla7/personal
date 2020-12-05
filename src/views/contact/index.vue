@@ -35,7 +35,7 @@
           <div class="message-body">
             <StepForm
               honeypot
-              :questions="questions2"
+              :questions="questions"
               @form:submit="submitContactForm"
               @form:validate="onValidate"
             >
@@ -43,7 +43,9 @@
             </StepForm>
             <!--LOADING MESSAGE-->
             <div v-if="loading">
-              <p class="mb-3 is-family-secondary">Delivering your email...</p>
+              <p class="mb-3 is-family-secondary">
+                {{ $t("contact.loading") }}
+              </p>
               <button class="button is-loading is-text is-large"></button>
             </div>
           </div>
@@ -75,8 +77,8 @@ export default {
       data = data || this.getFormData();
       axios
         .post(this.formURL, data)
-        .then(response => this.resetForm(response))
-        .catch(error => this.onError(error));
+        .then((response) => this.resetForm(response))
+        .catch((error) => this.onError(error));
     },
     getFormData() {
       return {
@@ -108,21 +110,21 @@ export default {
       loading: false,
       valid: true,
       email: "mailto:jfbonillago@gmail.com",
-      questions2: [
+      questions: [
         {
-          label: "What can I help you with?",
+          label: "contact.subject",
           name: "_subject"
         },
         {
-          label: "Add more details...",
+          label: "contact.details",
           name: "message"
         },
         {
-          label: "Your name",
+          label: "contact.name",
           name: "name"
         },
         {
-          label: "Your email",
+          label: "contact.email",
           name: "email",
           type: "email"
         }
