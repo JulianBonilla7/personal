@@ -14,9 +14,9 @@
           :class="{ current: current === index }"
         >
           <span>
-            <label :for="question.name" class="is-unselectable">{{
-              question.label
-            }}</label>
+            <label :for="question.name" class="is-unselectable">
+              {{ $t(question.label) }}
+            </label>
           </span>
           <input
             :type="question.type || 'text'"
@@ -53,7 +53,7 @@
           <span class="number-total">{{ totalQuestions }}</span>
         </span>
         <span class="error-message" :class="{ show: invalid }">
-          {{ error }}
+          {{ localizedError }}
         </span>
       </div>
       <!-- / controls -->
@@ -61,7 +61,7 @@
     <!-- /simform-inner -->
     <span class="final-message" :class="{ show: submitted }">
       <slot></slot>
-      <button class="button is-text">Reset form</button>
+      <button class="button is-text">Reset {{ $t("common.reset") }}</button>
     </span>
   </form>
 </template>
@@ -98,6 +98,9 @@ export default {
     progressSize() {
       const progress = this.current * (100 / (this.totalQuestions - 1));
       return (progress < 100 ? progress : 100) + "%";
+    },
+    localizedError() {
+      return this.$i18n.t(this.error);
     }
   },
   data() {
@@ -169,10 +172,10 @@ export default {
     _setErrorMessage(err) {
       switch (err) {
         case "EMPTYSTR":
-          this.error = "Please fill the field before continuing";
+          this.error = "contact.empty";
           break;
         case "INVALIDEMAIL":
-          this.error = "Please fill a valid email address";
+          this.error = "contact.invalid-email";
           break;
         default:
           break;
@@ -194,7 +197,7 @@ export default {
     }
   },
   mounted() {
-    document.addEventListener("keydown", e => {
+    document.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
         e.preventDefault();
         this.nextQuestion();

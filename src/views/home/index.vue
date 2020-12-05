@@ -24,7 +24,7 @@
             class="button is-outlined is-primary swing"
             :to="'contact'"
           >
-            <span>{{ $t("menu.contact") }}</span>
+            <span>{{ $t("home.cta") }}</span>
           </router-link>
           <!-- <router-link
             tag="button"

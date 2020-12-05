@@ -7,11 +7,8 @@
             {{ $t("about.title") }}
           </span>
         </h1>
-        <button class="button is-text is-small" @click="expanded = !expanded">
-          Show more
-        </button>
-        <transition name="slide-up">
-          <div v-if="expanded" class="px-3 has-text-left">
+        <CollapsibleSection show="common.more" hide="common.less">
+          <div class="box has-text-left has-background-dark">
             <i18n
               path="about.description"
               tag="p"
@@ -23,14 +20,12 @@
                   class="has-text-primary-light fancy"
                   target="_blank"
                 >
-                  <span class="content">
-                    {{ $t("about.cv") }}
-                  </span>
+                  <span class="content">{{ $t("about.cv") }}</span>
                 </a>
               </template>
             </i18n>
           </div>
-        </transition>
+        </CollapsibleSection>
       </div>
     </div>
     <div class="columns is-desktop">
@@ -70,7 +65,7 @@
       <div class="column">
         <h2 class="is-size-3 title">
           <span class="has-underline">
-            Experience
+            {{ $t("about.experience") }}
           </span>
         </h2>
         <Timeline :items="experience" />
@@ -80,6 +75,7 @@
 </template>
 
 <script>
+import CollapsibleSection from "@/components/common/CollapsibleSection.vue";
 import IconTooltip from "@/components/common/IconTooltip.vue";
 import Timeline from "@/components/common/TimelineCard.vue";
 
@@ -88,14 +84,14 @@ import skills from "@/shared/constants/skills";
 
 export default {
   components: {
+    CollapsibleSection,
     IconTooltip,
     Timeline
   },
   data() {
     return {
       experience: experience,
-      skills: skills,
-      expanded: false
+      skills: skills
     };
   },
   computed: {

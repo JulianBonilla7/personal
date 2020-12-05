@@ -28,7 +28,7 @@
             <div class="level-left">
               <div class="level-item">
                 <div>
-                  <h3 class="title is-size-4">{{ item.role }}</h3>
+                  <h3 class="title is-size-4">{{ $t(item.role) }}</h3>
                 </div>
               </div>
               <div class="level-item">
@@ -48,7 +48,7 @@
               </div>
             </div>
           </div>
-          <p class="is-family-secondary">{{ item.description }}</p>
+          <p class="is-family-secondary">{{ $t(item.description) }}</p>
         </div>
       </li>
     </ul>
